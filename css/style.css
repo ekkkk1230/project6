@@ -845,6 +845,27 @@ footer .copyright {
   background: url(../img/copyright.png) no-repeat;
 }
 
+.top_btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  background-color: #cb5232;
+  z-index: 99;
+  cursor: pointer;
+  display: none;
+}
+.top_btn p {
+  color: #ffffff;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @-webkit-keyframes left {
   0% {
     transform: rotate(8deg);
@@ -1072,42 +1093,3 @@ footer .copyright {
     opacity: 0;
   }
 }
-/* @keyframes fallLeaf_08{
-  0%{
-    transform: translate(0, 0) rotate(180deg);
-    opacity: 1;
-  }
-  90%{
-    opacity: 1;
-  }
-  100%{
-    transform: translate(-220px, 3000px) rotate(80deg);
-    opacity: 0;
-  }
-}
-@keyframes fallLeaf_09{
-  0%{
-    transform: translate(0, 0) rotate(180deg);
-    opacity: 1;
-  }
-  90%{
-    opacity: 1;
-  }
-  100%{
-    transform: translate(-420px, 3000px) rotate(120deg);
-    opacity: 0;
-  }
-}
-@keyframes fallLeaf_10{
-  0%{
-    transform: translate(0, 0) scale(0.8) rotate(180deg);
-    opacity: 1;
-  }
-  90%{
-    opacity: 1;
-  }
-  100%{
-    transform: translate(820px, 3000px) scale(0.8) rotate(120deg);
-    opacity: 0;
-  }
-} */

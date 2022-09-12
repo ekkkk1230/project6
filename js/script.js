@@ -89,12 +89,6 @@ function hover(list){
 hover(card);
 hover(pc_room);
 
-/* card.addEventListener('mouseenter', ()=>{
-    card.querySelector('.hover').classList.add('on');
-})
-card.addEventListener('mouseleave', ()=>{
-    card.querySelector('.hover').classList.remove('on');
-}) */
 
 /* fadein 이벤트 */
 window.addEventListener('load', ()=>{
@@ -106,7 +100,7 @@ window.addEventListener('load', ()=>{
 
 window.addEventListener('scroll', () => {
     let scrolltop = window.pageYOffset || document.documentElement.scrollTop || window.screenY;
-    /* console.log(scrolltop) */
+    console.log(scrolltop)
 
     if(scrolltop >= 3100){
         let fadeEvent = document.querySelectorAll('.section4 .fade-in');
@@ -123,7 +117,18 @@ window.addEventListener('scroll', () => {
         fadeEvent.forEach(el => {
             el.classList.add('show')
         })
+
+        document.querySelector('.top_btn').style.display = 'block';
+    }else if(scrolltop <= 800){
+        document.querySelector('.top_btn').style.display = 'none';
     }
+})
+
+/* top_bnt */
+document.querySelector('.top_btn').addEventListener('click', ()=>{
+    document.querySelector('header').scrollIntoView({
+        behavior: "smooth"
+    }); 
 })
 
 /* 탭버튼 */
